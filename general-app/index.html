@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Microfrontend app</title>
+</head>
+
+<body>
+    <script src="//localhost:5001/mui-front.js"></script>
+
+    <div class="section">
+        <input type="button" value="Show Angular App" onclick="globalMui.createFragment('angularApp', '#angularApp')">
+        <br />
+        <div id="angularApp" class="fragmentPlaceholder"></div>
+    </div>
+
+    <div class="section">
+        <input type="button" value="Show React App" onclick="globalMui.createFragment('reactApp', '#reactApp')">
+        <br />
+        <div id="reactApp" class="fragmentPlaceholder"></div>
+    </div>
+
+</body>
+
+</html>

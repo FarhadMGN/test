@@ -1,0 +1,10 @@
+/.idea/
+/angular-app/node_modules/
+/angular-app/dist/
+/general-app/node_modules/
+/mui/node_modules/
+/mui/storage/
+/react-app/node_modules/
+/react-app/build/
+/react-app/dist/
+/node_modules

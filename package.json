@@ -1,0 +1,28 @@
+{
+  "name": "noname",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "inst": "npm run inst:this && npm run inst:mui && npm run inst:general-app && npm run inst:angular && npm run inst:react",
+    "build": "npm run build:angular && npm run build:react",
+    "upload": "npm run upload:angular && npm run upload:react",
+    "start": "npm-run-all --parallel start:mui start:general-app",
+    "-----": "echo 0",
+    "local-dev:angular": "cd angular-app && npm run start",
+    "local-dev:react": "cd react-app && npm run start",
+    "start:mui": "cd mui && npm run start",
+    "start:general-app": "cd general-app && npm run start",
+    "inst:this": "npm i",
+    "inst:mui": "cd mui && npm i",
+    "inst:general-app": "cd general-app && npm i",
+    "inst:angular": "cd angular-app && npm i",
+    "inst:react": "cd react-app && npm i",
+    "upload:angular": "cd angular-app && npm run upload",
+    "upload:react": "cd react-app && npm run upload",
+    "build:angular": "cd angular-app && npm run build",
+    "build:react": "cd react-app && npm run build"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
