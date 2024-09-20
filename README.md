@@ -1,4 +1,4 @@
-# Microfrontens Application
+# Microfrontends Application
 
 ### How to start:
 npm run inst
